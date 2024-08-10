@@ -1,1 +1,6 @@
-<div class="reminders-container"></div>
+<div class="reminders-container">
+  <sr-reminder-card
+    *ngFor="let reminder of reminders"
+    [reminder]="reminder"
+  ></sr-reminder-card>
+</div>

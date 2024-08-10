@@ -1,13 +1,13 @@
 <div class="reminder-card-container">
   <div class="info-container">
     <div class="info-text-container">
-      <h3 class="reminder-title">Card Title</h3>
-      <p class="reminder-description">Card Description</p>
+      <h3 class="reminder-title">{{ reminder?.title }}</h3>
+      <p class="reminder-description">{{ reminder?.description }}</p>
     </div>
     <div class="priority-img"></div>
   </div>
   <div class="dates-container">
-    <p>Date Due</p>
-    <p>Date Reminder</p>
+    <p>Due: {{ reminder?.due_date }}</p>
+    <p>Reminder: {{ reminder?.remind_date }}</p>
   </div>
 </div>
