@@ -4,7 +4,7 @@
       <h3 class="reminder-title">{{ reminder?.title }}</h3>
       <p class="reminder-description">{{ reminder?.description }}</p>
     </div>
-    <div class="priority-img"></div>
+    <div [className]="'priority-' + reminder?.priority"></div>
   </div>
   <div class="dates-container">
     <p>Due: {{ reminder?.due_date }}</p>

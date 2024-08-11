@@ -1,3 +1,9 @@
+$priority-colors: (
+  1: #ff4000,
+  2: #ffff00,
+  3: #33cc33,
+);
+
 .info-container {
   display: flex;
   justify-content: space-between;
@@ -6,12 +12,21 @@
   background-color: gray;
   padding: 0.5em;
   border-radius: 9px;
+  min-height: 5vh;
 }
 
 .info-text-container {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+
+  max-width: 80%;
+}
+
+.reminder-description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .dates-container {
@@ -26,20 +41,22 @@
   width: 25%;
   min-height: 10%;
   padding: 1em;
-  //   box-sizing: border-box;
   border: 1px rgb(153, 153, 153) solid;
   border-radius: 9px;
   position: relative;
 }
 
-.priority-img {
+.priority-box {
   width: 10%;
   min-height: 10%;
-  //   align-self: first baseline;
-  //   right: 0;
-  //   top: 1em;
-  background-color: rgb(255, 81, 42);
   border-radius: 9px;
+}
+
+@each $priority, $color in $priority-colors {
+  .priority-#{$priority} {
+    @extend .priority-box;
+    background-color: $color;
+  }
 }
 
 p,

@@ -24,7 +24,8 @@ export const ReminderExamples: Reminder[] = [
   },
   {
     title: "Friend's Birthday",
-    description: 'Remember to call John on his birthday.',
+    description:
+      'Remember to call John on his birthday.Remember to call John on his birthday.Remember to call John on his birthday.Remember to call John on his birthday.Remember to call John on his birthday.Remember to call John on his birthday.Remember to call John on his birthday.Remember to call John on his birthday.Remember to call John on his birthday.Remember to call John on his birthday.Remember to call John on his birthday.Remember to call John on his birthday.Remember to call John on his birthday.Remember to call John on his birthday.Remember to call John on his birthday.Remember to call John on his birthday.Remember to call John on his birthday.Remember to call John on his birthday.Remember to call John on his birthday.',
     due_date: '2024-08-18T00:00:00Z',
     remind_date: '2024-08-17T12:00:00Z',
     priority: 2,
