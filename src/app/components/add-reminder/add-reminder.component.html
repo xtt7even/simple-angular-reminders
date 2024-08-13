@@ -1,0 +1,26 @@
+<div class="add-reminder-container">
+  <form class="reminder-form" [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <input
+      type="text"
+      formControlName="title"
+      placeholder="Title"
+      maxlength="75"
+    />
+    <textarea
+      type="text"
+      formControlName="description"
+      rows="4"
+      cols="50"
+      placeholder="Description"
+      maxlength="375"
+    ></textarea>
+    <input type="datetime-local" formControlName="due_date" />
+    <input type="datetime-local" formControlName="remind_date" />
+    <select formControlName="priority">
+      <option value="1">High Priority</option>
+      <option value="2">Medium Priority</option>
+      <option value="3">Low Priority</option>
+    </select>
+    <button type="submit" [disabled]="!addForm.valid">Add reminder</button>
+  </form>
+</div>

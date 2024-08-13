@@ -1,3 +1,5 @@
+@import "../../../styles/variables";
+
 $priority-colors: (
   1: #ff4000,
   2: #ffff00,
@@ -11,7 +13,7 @@ $priority-colors: (
   position: relative;
   background-color: gray;
   padding: 0.5em;
-  border-radius: 9px;
+  border-radius: $default-border-radius;
   min-height: 5vh;
 }
 
@@ -36,14 +38,13 @@ $priority-colors: (
 }
 
 .reminder-card-container {
-  background-color: rgb(77, 77, 77);
+  background-color: $reminder-background-color;
   color: white;
-  width: 25%;
+  min-width: 35%;
   min-height: 10%;
   padding: 1em;
   border: 1px rgb(153, 153, 153) solid;
-  border-radius: 9px;
-  position: relative;
+  border-radius: $default-border-radius;
 }
 
 .priority-box {
